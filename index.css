@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* { box-sizing: border-box; }
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Amita', cursive;
+  font-size: 30px;
+  background: blueviolet;
+  animation: mymove 10s infinite;
+}
+h1,h2,h3,h4,h5,h6 { font-family: 'Montserrat', sans-serif; }
+@keyframes mymove { from { background-color: #48f7f7; } to { background-color: hotpink; } }
+
+/* Navbar styles */
+ul.nav-list {
+  list-style: none;
+  display: flex;
+  background: #333;
+  margin: 0;
+  padding: 0;
+}
+ul.nav-list li a {
+  display: block;
+  color: hotpink;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul.nav-list li a.active, ul.nav-list li a:hover { background: #111; }
+
+/* About and Projects grid styles */
+.main { max-width: 1000px; margin: auto; padding: 20px; }
+.row { margin: 8px -16px; }
+.row, .row > .column { padding: 8px; }
+.column { float: left; width: 25%; }
+.row:after { content: ''; display: table; clear: both; }
+.content { background-color: rgba(243,35,215,0.726); padding: 10px; }
+@media screen and (max-width:900px) { .column { width:50%; } }
+@media screen and (max-width:600px) { .column { width:100%; } }
+
+footer { background-color: black; padding:10px; text-align:center; color:#48f7f7; }
