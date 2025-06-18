@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-vite-react",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -r https://github.com/Nikita-oldham/Portfolio.git"
+  },
+  "dependencies": {
+    "lucide-react": "^0.513.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "gh-pages": "^6.3.0",
+    "vite": "^6.3.5"
+  },
+  "homepage": "https://github.com/Nikita-oldham/Portfolio.git"
+}
